@@ -19,7 +19,7 @@ foreach ($lines as $line) {
 
     if ($direction === 'L') {
         $position = ($position - $steps) % 100;
-    } else {
+    } else if ($direction === 'R') {
         $position = ($position + $steps) % 100;
     }
 
