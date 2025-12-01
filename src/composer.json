@@ -1,0 +1,21 @@
+{
+    "name": "advent/2025",
+    "description": "",
+    "version": "1.0.0",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "require": {
+        "php": ">=8.5"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "autoload": {
+        "psr-4": {
+            "Util\\": "util/"
+        },
+        "files": [
+            "util/index.php"
+        ]
+    }
+}
