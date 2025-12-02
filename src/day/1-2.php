@@ -1,5 +1,7 @@
 <?php
 
+$start = microtime(true);
+
 require __DIR__ . '/../vendor/autoload.php';
 
 $lines = readLinesFromFile('day1.txt');
@@ -44,4 +46,6 @@ foreach ($lines as $line) {
     }
 }
 
-echo $answer;
+echo $answer . "\n";
+
+echo number_format((microtime(true) - $start) * 1000, 3) . " ms\n";
