@@ -19,7 +19,7 @@ for ($i = 0; $i < $lineCount; $i++) {
             continue;
         }
 
-        if ($lines[$i][$j] === '.') {
+        if ($lines[$i][$j] !== '@') {
             continue;
         }
 
