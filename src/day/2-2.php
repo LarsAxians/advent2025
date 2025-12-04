@@ -20,18 +20,18 @@ foreach ($lines as $line) {
     for ($i = (int)$rangeStart; $i <= (int)$rangeEnd; $i++) {
         $length = strlen((string)$i);
 
-        for ($blockLen = 1; $blockLen <= intdiv($length, 2); $blockLen++) {
-            if ($length % $blockLen !== 0) {
+        for ($j = 1; $j <= intdiv($length, 2); $j++) {
+            if ($length % $j !== 0) {
                 continue;
             }
 
-            $repeatCount = intdiv($length, $blockLen);
+            $repeatCount = intdiv($length, $j);
 
             if ($repeatCount < 2) {
                 continue;
             }
 
-            if (str_repeat(substr((string)$i, 0, $blockLen), $repeatCount) === (string)$i) {
+            if (str_repeat(substr((string)$i, 0, $j), $repeatCount) === (string)$i) {
                 $answer += $i;
 
                 break;
