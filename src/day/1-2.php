@@ -6,8 +6,9 @@ require __DIR__ . '/../vendor/autoload.php';
 
 $lines = readLinesFromFile('day1.txt');
 
-$position = 50;
 $answer = 0;
+
+$position = 50;
 
 foreach ($lines as $line) {
     $line = trim($line);

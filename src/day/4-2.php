@@ -6,9 +6,9 @@ require __DIR__ . '/../vendor/autoload.php';
 
 $lines = readLinesFromFileAsArray('day4.txt');
 
-$previousAnswer = null;
 $answer = 0;
 
+$previousAnswer = null;
 $lineCount = count($lines);
 $lineLength = count($lines[0]);
 
