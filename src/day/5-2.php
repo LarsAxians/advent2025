@@ -29,6 +29,7 @@ foreach ($lines as $line) {
 usort($ranges, static fn($i, $j) => $i[0] <=> $j[0] ?: $i[1] <=> $j[1]);
 
 [$currentStart, $currentEnd] = $ranges[0];
+
 for ($i = 1, $j = count($ranges); $i < $j; $i++) {
     [$rangeStart, $rangeEnd] = $ranges[$i];
 
